@@ -1,0 +1,24 @@
+{
+  "name": "mercadoliebre",
+  "version": "1.0.0",
+  "description": "Ejericio Integrador - Full Stack - MercadoLiebre - Digital House",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/maureenparody/mercadoLiebre.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/maureenparody/mercadoLiebre/issues"
+  },
+  "homepage": "https://github.com/maureenparody/mercadoLiebre#readme",
+  "dependencies": {
+    "express": "^4.18.1",
+    "moments": "^0.0.2"
+  }
+}

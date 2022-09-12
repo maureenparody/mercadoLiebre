@@ -1,0 +1,377 @@
+/* Amarillo: #EAC926; Azul: ; Celeste: #1259c3; Gris oscuro: #666;
+Gris claro: #ebebeb; Verde: #39b54a; */
+
+/*Codigo que no dieron con este link para entender https://developer.mozilla.org/es/docs/Web/CSS/box-sizing*/
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    background-color: #ebebeb;
+}
+
+/*HEADER*/
+
+header{
+    background-color: #EAC926;
+    padding: 20px;
+}
+
+.upperTitle{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.logo{
+    width: 50%;
+}
+
+.search{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+
+/* .compras{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+} */
+
+.compras h2{
+    font-weight: 400;
+    text-align: center;
+    font-size: 14px;
+}
+
+.upper button{
+    background-color: #ffffff;
+    border-radius: 5px;
+}
+
+
+/*navegation bar*/
+.nav-bar{
+    display: none;
+}
+.burger-menu{
+    color: #ffffff;
+    background-color: #03264C;
+    display: block;
+    max-width: 50px;
+    padding: 15px 0px;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 18px;
+    margin: auto;
+}
+.burger-menu i{
+    color: white;
+    margin-bottom: 0px;
+    /* background-color: #03264C; 
+    text-align: center;
+    border-radius: 10%;
+    padding: 10px 5px 10px 5px; */
+} 
+ul{
+    list-style: none;
+}
+ul a{
+    text-decoration: none;
+    color: black;
+    display: inline-block;
+    padding: 5px 0;
+    font-size: 16px;
+}
+
+
+
+
+
+
+/*MAIN*/
+
+main{
+    align-items: center;
+    display: block;
+}
+
+main section{
+    width: 90%; /*seccion main*/
+    margin: 15px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+}
+main h2{
+    width: 90%; /*seccion main*/
+    margin: 15px;
+    padding: 30px;
+    margin: auto;
+}
+
+
+
+article{
+    background-color: white;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+i{
+    width: 2em;
+    margin-bottom: 10px;
+    color: #03264C;
+}
+
+
+.holders{
+    font-size: 24px;
+    color: #666;
+    font-weight: bold;
+}
+
+.detail{
+    font-size: 16px;
+    margin: 10px;
+    padding-bottom: 10px;
+}
+.price{
+    font-size: 18px;
+}
+.discount{
+    font-size: 16px;
+    color: #39b54a;
+}
+.banner img{
+    width: 100%;
+}
+/*cambiar después esto*/
+.product-item img{
+    width: 100%;
+}
+.product-detail{
+    border-top: solid 1px #ebebeb;
+}
+.product-price{
+    margin:10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.green{
+    color:#39b54a;
+   vertical-align: middle;
+   margin-bottom: 0px;
+   width: 2em;  
+}
+.green:hover{
+    --fa-animation-duration: 0.5s;
+}
+.fa-stack{
+    border-right: 15px;
+}
+.product-item:hover{
+    /*agregar algo*/
+}
+
+
+
+/*siguente codigo es el q nos dieron*/
+main section article i{
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top: -15px;
+}
+
+
+
+
+/*FOOTER*/
+
+footer{
+    text-align: center;
+    padding-top: 20px;
+    text-align: center;
+    background-color: white;
+}
+
+footer .payments{
+    margin-bottom: 15px;
+}
+
+footer .payments h3{
+    color: #666;
+}
+
+footer .payments p{
+    display: inline-block;
+    width: 70vw;
+    color: gray;
+    font-size: 12px;
+}
+
+footer .payments i{
+    font-size: 2em;
+    color: #1259C3;
+}
+
+footer .legal{
+    text-align: left;
+    padding-bottom: 15px;
+}
+
+
+
+
+
+
+
+
+
+
+/*VERSION TABLET*/
+@media (min-width: 768px){
+    article{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+    main section{
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: stretch;
+    }
+    .product-item{
+        width: 46%;
+    }
+    
+
+    .upperTitle{
+        width: 60%
+    }
+    .compras{
+        width: 30%;
+    }
+    .compras h2{
+        font-weight: 400;
+        text-align: right;
+        font-size: 17px;
+    }
+
+
+
+    footer .payments h3{
+        font-size: 20px;
+    }
+    footer .payments p{
+        font-size: 18px;
+    }
+    .legal {
+        font-size: 18px;
+    }
+
+
+    .nav-bar{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 20px;
+
+    }
+    .burger-menu{
+        display: none;
+
+    }
+    .nav-bar ul{
+        display: flex;
+    }
+    .nav-bar li{
+        margin: 0 5px;
+    }
+    .upper{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+    }
+    .compras{
+        max-width: 250px;
+        text-align: right;
+    }
+
+}
+
+
+
+
+
+
+
+/*VERSION DESKTOP*/
+@media (min-width: 1024px){
+    article{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+    main section{
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: stretch;
+    }
+    .product-item{
+        width: 23%;
+        min-width: 18%;
+    }
+
+
+
+    
+    
+   
+
+}
+
+/*Pantallas muy grandes*/
+
+@media (min-width: 1200px){
+    .upper{
+        max-width: 1200;
+        margin: auto;
+    }
+    .nav-bar{
+        max-width: 1200;
+        margin: auto;
+        margin-top: 16px;
+    }
+    .nav-bar li{
+        margin: 0 10px;
+    }
+    .nav-bar a{
+        font-size: 18px;
+    }
+    .compras{
+        max-width: none;
+    }
+    .logo{
+        width: 250px;
+    }
+
+    /*hacer tamaño de elementos del footer para distntinos*/
+}
+
