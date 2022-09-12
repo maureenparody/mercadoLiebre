@@ -38,11 +38,9 @@ header{
     width: 50%;
 }
 
-/* .compras{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-} */
+.search input{
+    padding: 5px 5px;
+}
 
 .compras h2{
     font-weight: 400;
@@ -375,3 +373,117 @@ footer .legal{
     /*hacer tamaño de elementos del footer para distntinos*/
 }
 
+/*REGISTER CSS*/
+
+.formulario{
+    background-color: #ebebeb;
+    width: 100%;
+    
+}
+.formulario form{
+    
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding: 40px;
+    width: 90%;
+    margin: auto;
+    margin-top: 0%;
+
+}
+
+.formulario form label{
+    font-size: 16px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.formulario form input{
+    font-size: 12px;
+    padding: 10px;
+}
+
+.formulario form .etCheckbox{
+    margin-top: 5px;
+}
+.formulario form .etPerfil{
+    margin-top: 5px;
+} 
+.formulario form .etCheckbox label{
+    font-size: 12px;
+    font-weight: normal;
+}
+.formulario form .etPerfil label{
+    font-size: 12px;
+    font-weight: normal;
+}
+
+.formulario form .botonesReg{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+.formulario form .botonesReg button{
+    background-color: #1259C3;
+    color: #ffffff;
+    padding: 15px;
+    font-weight: bold;
+    font-family: 18px;
+    border-radius: 5px;
+}
+.formulario form .botonesReg button a{
+    color: #ffffff;
+    font-weight: bold;
+    font-family: 18px;
+    text-decoration: none;
+
+}
+
+
+
+/*LOGIN CSS*/
+.loginUsuario{
+    background-color: #ebebeb;
+    width: 100%;
+}
+.loginUsuario form{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding: 40px;
+    width: 70%;
+    margin: auto;
+    margin-top: 0%;
+}
+.loginUsuario form label{
+    font-size: 16px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+.loginUsuario form input{
+    font-size: 14px;
+    padding: 10px;
+}
+
+.loginUsuario form .botonLogin{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.loginUsuario form button{
+    background-color: #1259C3;
+    color: #ffffff;
+    padding: 15px;
+    font-weight: bold;
+    font-family: 18px;
+    border-radius: 5px;
+}
+
+.loginUsuario form a{
+    text-decoration: none;
+    color: #ffffff;
+    padding: 15px;
+    font-weight: bold;
+    font-family: 18px;
+}
