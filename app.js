@@ -7,7 +7,7 @@ app.get('/mostrar_mensaje', function (req, res) {
   res.sendFile(path.resolve(__dirname, './views/home.html'));
 });
 
-app.use(express.static(path.resolve(__dirname, './public')));
+// app.use(express.static(path.resolve(__dirname, './public')));
 
 app.listen(process.env.PORT || 3000, function() {
   console.log("Servidor corriendo");
