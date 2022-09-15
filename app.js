@@ -1,8 +1,14 @@
-const express = require('express')
-const app = express()
+const express = require('express');
+const path = require('path');
 
-app.get('/', function (req, res) {
-  res.send('Hello World')
-})
+const app = express();
 
-app.listen(3000)
+app.get('/mostrar_mensaje', function (req, res) {
+  res.sendFile(path.resolve(__dirname, './views/home.html'));
+});
+
+app.use(express.static(path.resolve(__dirname, './public')));
+
+app.listen(process.env.PORT || 3000, function() {
+  console.log("Servidor corriendo");
+});
